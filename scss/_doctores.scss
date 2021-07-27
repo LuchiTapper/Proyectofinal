@@ -1,0 +1,66 @@
+   /*HTML Dr. JorgeLopez y todos los doctores*/
+
+   .JorgeLopez { 
+    padding-top: 20px;
+    padding-bottom: 20px;
+  width: 100%; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2em;
+  font-weight: normal;
+  text-decoration: underline;
+  text-align: center;
+  margin-left: 20px;
+  }
+  
+  .introDR {
+    border-style: inset;
+   text-align: center;
+    color: grey;
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px 50px;
+     height: 180px;
+  }
+  .turnosH2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  width: 100%; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.3em;
+  font-weight: normal;
+  text-align: center;
+   }
+  
+  .fondos-JL {
+    background-image: radial-gradient(lightpink,pink, white);}
+  
+    /*Medias de doctores para pantallas más chicas*/
+  @media (max-width: 992px) {
+   .mediaFotoDr {text-align: center}
+  }
+  @media (max-width:768px) {
+    .mediaFotoDr {
+      margin-top: 15px;}
+      .JorgeLopez {margin-bottom: 0px;}
+      .introDR {margin-top: 0px;}
+  }
+  
+  @media (max-width: 992px) {
+    .mediaFotoDra {text-align: center;
+    margin-top:40px;}
+  }
+  
+  @media (max-width:768px) {  
+  .introDR {  
+    margin-top:0px;
+    margin-bottom:30¡5px;
+     font-size: 0.7rem;   
+   }
+    .fotoDraXimena {display: none;}
+  
+  .turnosH2 {
+    padding-top: 25px;
+  font-size: 0.7rem; }
+  }
+  
+  

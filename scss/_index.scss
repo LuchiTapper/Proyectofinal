@@ -1,0 +1,180 @@
+
+
+/*generales e index*/
+
+
+main {  
+    background-color:#fae6e0;
+    margin-bottom: 0px;
+     margin-top: 0px;}
+  
+  .tituloIndex {
+    text-align: center; 
+    color:grey; 
+   font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 20px;
+    width: 600px;
+     height: 60; 
+    margin: 0px 60px 5px 380px;
+    font-size: 30pt;
+   text-decoration: underline; }
+  
+  .backIntro {
+    margin-left: 30px;
+    height: 400px;  
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    border-radius: 3%;
+    .parrIntro {
+        padding: 100px 10px 100px 350px;
+        display: flex;
+        justify-content: end;
+        text-align: center;
+        color: white;
+        font-size: 150%;
+         font-weight: bold;}
+  }
+
+  
+  
+  .fotoXi {
+    margin-top: 10px;
+    width: 350px;
+    height: 350px;
+    border-radius: 5%;
+    border: solid black 2px;
+    }
+  
+  main section a {
+    text-decoration: none; 
+    color: black; 
+    background-color: white;
+    padding:10px;
+    border-radius: 40px;
+    &:hover {color: grey;
+      border: solid grey 2px;}
+      span {font-weight: bold;}
+  }
+  
+  
+  .Staff {
+    margin-top: 70px;
+    padding-top: 3px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: grey;
+    font-size: 1.7rem;
+   text-decoration: underline;}
+  
+  .Staffh3 {
+    padding-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+    color: grey;
+    font-size: 0.9rem;
+   }
+  
+    #estilosCarru {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 30px;
+    }
+  
+  .jsCarru {
+   color:black!important;
+    text-decoration: none;  
+    .Acarru {
+      color: black !important;
+      text-decoration: underline;
+      font-size: 1.3rem;
+      font-weight: bold;
+      background-color: rgba(250, 250, 250, 0.8);
+      border: solid 1px black;
+      border-style: dotted;
+       &:hover { background-color: grey;
+        border: solid pink 2px;} }
+  }
+ 
+  
+  
+  
+  /*media para pantalla más chicas Index*/
+  @media only screen and (max-width: 1025px) {
+     .backIntro{
+      margin-left: 0px;       
+      .parrIntro {
+      color: grey;
+      font-size: 100%;
+           }
+          }
+
+      .tituloIndex {   
+        margin: 0px 60px 5px 60px;
+        font-size: 150%;
+      }
+
+      .SeccionXi { 
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;}
+  
+     
+      .fotoXi {
+          margin-left:25px;
+          width: 300px;
+           height: 300px;}
+  }
+  
+  @media (max-width:800px) {
+    #CelularCarru {
+      height: 60px;  
+      font-size: smaller;
+      padding-bottom: 20%;
+    }
+     .jsCarru {  .Acarru { 
+       font-size: 0.8rem;  
+      border-style: none; }
+     }
+    
+    .fotoXi { 
+    width: 250px;
+    height: 250px;
+      }  
+  }
+  
+  @media (max-width: 540px) {
+    .tituloIndex {   
+    margin: 0px 10px 5px 10px;
+    font-size: 140%;
+    padding:20px 10px;
+    width: 500px;
+    }
+  
+    .backIntro {
+      background-image: url(../img/telemedicina.jpg);
+      .parrIntro {
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 130%;
+        color: rgb(54, 50, 50);
+      }
+    }
+
+  .jsCarru {font-size: 0.7rem;
+              .Acarru { font-size: 0.8rem;  }
+  }
+  
+  }
+  
+  @media (max-width: 415px) {
+  .tituloIndex {
+    margin-left:30px;
+   padding-left: 20px;
+   width: 300px;
+   font-size: 120%;}
+  
+  }

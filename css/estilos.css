@@ -1,0 +1,437 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/*navegador - header*/
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: grey;
+  padding: 5px 2px 5px 2px;
+  border: solid 1px black;
+  margin-bottom: 0px; }
+  header section {
+    margin: 0 auto;
+    padding: 8px; }
+    header section div {
+      margin: 20px 5px 20px 10px;
+      padding: 10px; }
+    header section .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 70%; }
+
+nav {
+  margin: 10px 15px 10px 10px;
+  padding: 10px; }
+  nav a {
+    text-decoration: none;
+    color: #207a20; }
+  nav ul li {
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px; }
+
+.lista-redes {
+  display: inline-block;
+  text-decoration: none; }
+
+/*media redes*/
+@media (max-width: 695px) {
+  .lista-redes {
+    display: none; }
+  header {
+    height: 200px; } }
+
+@media (max-width: 419px) {
+  nav a {
+    width: 60px;
+    font-size: 0.7rem; } }
+
+@media (max-width: 348px) {
+  nav a {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 40px;
+    font-size: 0.6rem; } }
+
+/*generales e index*/
+main {
+  background-color: #fae6e0;
+  margin-bottom: 0px;
+  margin-top: 0px; }
+
+.tituloIndex {
+  text-align: center;
+  color: grey;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding: 20px;
+  width: 600px;
+  height: 60;
+  margin: 0px 60px 5px 380px;
+  font-size: 30pt;
+  text-decoration: underline; }
+
+.backIntro {
+  margin-left: 30px;
+  height: 400px;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  border-radius: 3%; }
+  .backIntro .parrIntro {
+    padding: 100px 10px 100px 350px;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    font-weight: bold; }
+
+.fotoXi {
+  margin-top: 10px;
+  width: 350px;
+  height: 350px;
+  border-radius: 5%;
+  border: solid black 2px; }
+
+main section a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 40px; }
+  main section a:hover {
+    color: grey;
+    border: solid grey 2px; }
+  main section a span {
+    font-weight: bold; }
+
+.Staff {
+  margin-top: 70px;
+  padding-top: 3px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: grey;
+  font-size: 1.7rem;
+  text-decoration: underline; }
+
+.Staffh3 {
+  padding-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+  color: grey;
+  font-size: 0.9rem; }
+
+#estilosCarru {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px; }
+
+.jsCarru {
+  color: black !important;
+  text-decoration: none; }
+  .jsCarru .Acarru {
+    color: black !important;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgba(250, 250, 250, 0.8);
+    border: solid 1px black;
+    border-style: dotted; }
+    .jsCarru .Acarru:hover {
+      background-color: grey;
+      border: solid pink 2px; }
+
+/*media para pantalla más chicas Index*/
+@media only screen and (max-width: 1025px) {
+  .backIntro {
+    margin-left: 0px; }
+    .backIntro .parrIntro {
+      color: grey;
+      font-size: 100%; }
+  .tituloIndex {
+    margin: 0px 60px 5px 60px;
+    font-size: 150%; }
+  .SeccionXi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .fotoXi {
+    margin-left: 25px;
+    width: 300px;
+    height: 300px; } }
+
+@media (max-width: 800px) {
+  #CelularCarru {
+    height: 60px;
+    font-size: smaller;
+    padding-bottom: 20%; }
+  .jsCarru .Acarru {
+    font-size: 0.8rem;
+    border-style: none; }
+  .fotoXi {
+    width: 250px;
+    height: 250px; } }
+
+@media (max-width: 540px) {
+  .tituloIndex {
+    margin: 0px 10px 5px 10px;
+    font-size: 140%;
+    padding: 20px 10px;
+    width: 500px; }
+  .backIntro {
+    background-image: url(../img/telemedicina.jpg); }
+    .backIntro .parrIntro {
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 130%;
+      color: #363232; }
+  .jsCarru {
+    font-size: 0.7rem; }
+    .jsCarru .Acarru {
+      font-size: 0.8rem; } }
+
+@media (max-width: 415px) {
+  .tituloIndex {
+    margin-left: 30px;
+    padding-left: 20px;
+    width: 300px;
+    font-size: 120%; } }
+
+/*HTML ServiciosMédicos*/
+.estiloSM {
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/atencionvirtual.jpg);
+  background-repeat: space;
+  background-position: center;
+  color: grey;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "endocrino clinica nutri" "endocrino clinica nutri" "endocrino  clinica nutri"; }
+  .estiloSM .endo, .estiloSM .clinica, .estiloSM .nutrición {
+    grid-area: endocrino;
+    margin-left: 150px;
+    height: 150px;
+    font-weight: bold;
+    font-size: 15pt;
+    color: #302e2b;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+    .estiloSM .endo .pEndoClinNutri, .estiloSM .clinica .pEndoClinNutri, .estiloSM .nutrición .pEndoClinNutri {
+      width: 60%;
+      text-align: center;
+      border: grey;
+      border-radius: 15%;
+      text-decoration: underline;
+      background-color: #807676; }
+    .estiloSM .endo .listas-SM, .estiloSM .clinica .listas-SM, .estiloSM .nutrición .listas-SM {
+      text-decoration: none;
+      list-style-position: inside;
+      padding: 7px;
+      list-style-type: none; }
+      .estiloSM .endo .listas-SM .paddingIL, .estiloSM .clinica .listas-SM .paddingIL, .estiloSM .nutrición .listas-SM .paddingIL {
+        padding: 20px; }
+        .estiloSM .endo .listas-SM .paddingIL .estilo-A-SM, .estiloSM .clinica .listas-SM .paddingIL .estilo-A-SM, .estiloSM .nutrición .listas-SM .paddingIL .estilo-A-SM {
+          background-color: rgba(250, 250, 250, 0.8);
+          padding: 8px; }
+          .estiloSM .endo .listas-SM .paddingIL .estilo-A-SM:hover, .estiloSM .clinica .listas-SM .paddingIL .estilo-A-SM:hover, .estiloSM .nutrición .listas-SM .paddingIL .estilo-A-SM:hover {
+            color: grey;
+            text-decoration: underline;
+            border: solid grey 2px; }
+  .estiloSM .clinica {
+    grid-area: clinica; }
+  .estiloSM .nutrición {
+    grid-area: nutri; }
+
+.titulo-SM {
+  grid-area: titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40pt;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: underline;
+  height: 100px; }
+
+/*medias queries para Servicios Médicos*/
+@media (max-width: 1010px) {
+  .estiloSM {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo" "none endocrino endocrino " "none  clinica  clinica" "none  nutri   nutri";
+    background-image: url(../img/telemedicina.jpg); }
+    .estiloSM .endo, .estiloSM .clinica, .estiloSM .nutrición {
+      margin-left: 0px; }
+  .titulo-SM {
+    font-size: 20pt;
+    height: 50px; } }
+
+/*HTML Contacto*/
+.h1Contacto {
+  color: grey;
+  text-align: center;
+  text-decoration: underline;
+  padding: 30px;
+  height: 30px; }
+
+.h2Contacto {
+  color: grey;
+  text-align: center;
+  text-decoration: underline;
+  padding: 0px 20px 20px 20px;
+  height: 20px;
+  margin-bottom: 10px; }
+
+.section1 {
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/contacto2.jpg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2px; }
+  .section1 .div1 {
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(250, 250, 250, 0.8);
+    border-radius: 10px; }
+    .section1 .div1 .articles1 {
+      font-size: 20px;
+      width: 20%;
+      margin: 35px 35px;
+      text-align: center;
+      padding: 40px 20px;
+      background-color: whitesmoke; }
+
+.section2 {
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/contacto.jpg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/*media para Contacto*/
+@media (max-width: 576px) {
+  .section1 .div1 {
+    height: 490px; }
+    .section1 .div1 .articles1 {
+      font-size: 12px;
+      height: 100px;
+      width: 15%; } }
+
+@media (max-width: 375px) {
+  .section1 .div1 {
+    height: 395px; }
+    .section1 .div1 .articles1 {
+      margin: 8px;
+      width: 19%; } }
+
+/*HTML Dr. JorgeLopez y todos los doctores*/
+.JorgeLopez {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2em;
+  font-weight: normal;
+  text-decoration: underline;
+  text-align: center;
+  margin-left: 20px; }
+
+.introDR {
+  border-style: inset;
+  text-align: center;
+  color: grey;
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 40px 50px;
+  height: 180px; }
+
+.turnosH2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.3em;
+  font-weight: normal;
+  text-align: center; }
+
+.fondos-JL {
+  background-image: radial-gradient(lightpink, pink, white); }
+
+/*Medias de doctores para pantallas más chicas*/
+@media (max-width: 992px) {
+  .mediaFotoDr {
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  .mediaFotoDr {
+    margin-top: 15px; }
+  .JorgeLopez {
+    margin-bottom: 0px; }
+  .introDR {
+    margin-top: 0px; } }
+
+@media (max-width: 992px) {
+  .mediaFotoDra {
+    text-align: center;
+    margin-top: 40px; } }
+
+@media (max-width: 768px) {
+  .introDR {
+    margin-top: 0px;
+    margin-bottom: 30¡5px;
+    font-size: 0.7rem; }
+  .fotoDraXimena {
+    display: none; }
+  .turnosH2 {
+    padding-top: 25px;
+    font-size: 0.7rem; } }
+
+/*footer*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: grey;
+  padding: 10px;
+  border: solid 1px black;
+  margin: 0px;
+  grid-area: footer; }
+  footer .derechos {
+    font-size: 70%;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    font-style: italic;
+    border: none;
+    margin: 5px;
+    padding: 0px;
+    width: 250px; }
+  footer .redes-Footer {
+    margin-right: 133px; }
+
+/*media para el footer*/
+@media (max-width: 531px) {
+  footer .derechos {
+    width: 150px;
+    font-size: 60%; }
+  footer .redes-Footer {
+    margin-right: 10px; } }
