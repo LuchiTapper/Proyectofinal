@@ -29,13 +29,18 @@ nav {margin: 10px 15px 10px 10px;
    a {  text-decoration: none;
     color:rgb(32, 122, 32);}
     ul li {display: inline-block;  
-      background-color: white; 
-      border-radius:20px ; 
-      padding: 10px; }
+           background-color: white; 
+           border-radius:20px ; 
+           padding: 10px; 
+           
+      }
   }
    
 .lista-redes {display: inline-block; 
-  text-decoration: none;}
+  text-decoration: none;
+         i { font-size: 35px;
+            color:white;}
+        }
 
 
   /*media redes*/

@@ -39,6 +39,9 @@ nav {
 .lista-redes {
   display: inline-block;
   text-decoration: none; }
+  .lista-redes i {
+    font-size: 35px;
+    color: white; }
 
 /*media redes*/
 @media (max-width: 695px) {
@@ -72,7 +75,6 @@ main {
   font-weight: bold;
   padding: 20px;
   width: 600px;
-  height: 60;
   margin: 0px 60px 5px 380px;
   font-size: 30pt;
   text-decoration: underline; }
@@ -80,24 +82,66 @@ main {
 .backIntro {
   margin-left: 30px;
   height: 400px;
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/backgroundInn.jpg);
   background-repeat: no-repeat;
-  border-radius: 3%; }
+  background-position: center;
+  border-radius: 3%;
+  border: solid 3px #726d6d; }
   .backIntro .parrIntro {
-    padding: 100px 10px 100px 350px;
+    width: 630px;
+    padding: 160px 30px 100px 260px;
+    margin-left: 20px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     text-align: center;
-    color: white;
-    font-size: 150%;
-    font-weight: bold; }
+    color: black;
+    font-family: 'Tauri', sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    animation-name: intro;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: linear; }
+
+@keyframes intro {
+  0% {
+    transform: translateY(90px);
+    opacity: 0; }
+  25% {
+    transform: translateY(70px); }
+  50% {
+    opacity: 0.5;
+    transform: translateY(50px); }
+  75% {
+    transform: translateY(30px);
+    opacity: 1; }
+  100% {
+    transform: translateY(10px); } }
 
 .fotoXi {
   margin-top: 10px;
   width: 350px;
   height: 350px;
   border-radius: 5%;
-  border: solid black 2px; }
+  border: solid black 2px;
+  animation-name: Ximefoto;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function: linear; }
+
+@keyframes Ximefoto {
+  0% {
+    transform: translateX(260px); }
+  25% {
+    transform: translateX(150px); }
+  50% {
+    transform: translateX(100px); }
+  75% {
+    transform: translateX(50px); }
+  100% {
+    transform: translateX(20px); } }
 
 main section a {
   text-decoration: none;
@@ -148,12 +192,16 @@ main section a {
       border: solid pink 2px; }
 
 /*media para pantalla más chicas Index*/
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1200px) {
   .backIntro {
     margin-left: 0px; }
     .backIntro .parrIntro {
+      width: 530px;
+      padding-left: 300px;
+      padding-right: 70px;
+      margin-left: 0px;
       color: grey;
-      font-size: 100%; }
+      font-size: 90%; }
   .tituloIndex {
     margin: 0px 60px 5px 60px;
     font-size: 150%; }
@@ -167,7 +215,14 @@ main section a {
     width: 300px;
     height: 300px; } }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
+  .backIntro .parrIntro {
+    width: 630px;
+    padding-right: 160px;
+    padding-left: 170px;
+    padding-top: 190px; } }
+
+@media (max-width: 815px) {
   #CelularCarru {
     height: 60px;
     font-size: smaller;
@@ -179,21 +234,16 @@ main section a {
     width: 250px;
     height: 250px; } }
 
-@media (max-width: 540px) {
+@media (max-width: 546px) {
   .tituloIndex {
     margin: 0px 10px 5px 10px;
     font-size: 140%;
     padding: 20px 10px;
     width: 500px; }
-  .backIntro {
-    background-image: url(../img/telemedicina.jpg); }
-    .backIntro .parrIntro {
-      padding: 50px;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      font-size: 130%;
-      color: #363232; }
+  .backIntro .parrIntro {
+    padding-right: 100px;
+    padding-left: 150px;
+    width: 470px; }
   .jsCarru {
     font-size: 0.7rem; }
     .jsCarru .Acarru {
@@ -204,7 +254,19 @@ main section a {
     margin-left: 30px;
     padding-left: 20px;
     width: 300px;
-    font-size: 120%; } }
+    font-size: 120%; }
+  .backIntro .parrIntro {
+    padding-right: 120px;
+    padding-left: 100px;
+    padding-top: 160px;
+    width: 420px; } }
+
+@media (max-width: 360px) {
+  .backIntro .parrIntro {
+    padding-right: 150px;
+    padding-left: 70px;
+    padding-top: 160px;
+    width: 420px; } }
 
 /*HTML ServiciosMédicos*/
 .estiloSM {
@@ -226,7 +288,7 @@ main section a {
     color: #302e2b;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
     .estiloSM .endo .pEndoClinNutri, .estiloSM .clinica .pEndoClinNutri, .estiloSM .nutrición .pEndoClinNutri {
-      width: 60%;
+      width: 70%;
       text-align: center;
       border: grey;
       border-radius: 15%;
@@ -246,17 +308,19 @@ main section a {
             color: grey;
             text-decoration: underline;
             border: solid grey 2px; }
-  .estiloSM .clinica {
-    grid-area: clinica; }
+  .estiloSM .clinica, .estiloSM .nutrición {
+    grid-area: clinica;
+    margin-left: 3px; }
   .estiloSM .nutrición {
     grid-area: nutri; }
 
 .titulo-SM {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   grid-area: titulo;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40pt;
+  font-size: 30pt;
   font-weight: normal;
   text-align: center;
   text-decoration: underline;
@@ -427,6 +491,9 @@ footer {
     width: 250px; }
   footer .redes-Footer {
     margin-right: 133px; }
+    footer .redes-Footer i {
+      font-size: 35px;
+      color: white; }
 
 /*media para el footer*/
 @media (max-width: 531px) {

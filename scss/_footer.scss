@@ -21,7 +21,12 @@ footer { display: flex;
       padding: 0px; 
       width: 250px; 
      }
-     .redes-Footer {margin-right: 133px;}
+     .redes-Footer {
+       margin-right: 133px;
+       i { font-size: 35px;
+           color:white;}
+                   } 
+            
   }
    
 
