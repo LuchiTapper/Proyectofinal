@@ -33,12 +33,26 @@
   text-decoration: underline;
    }
 
-  fieldset legend {
+  fieldset {   
+    legend {
     color: grey; 
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     font-weight: normal;
-    text-align: center;}
+    text-align: center; }
+    p { @extend legend ;
+      font-size: 1rem;}
+      label { @extend legend ;
+              font-size: 1.1rem;
+              border: solid 1px grey;
+              border-radius: 10%; 
+              font-weight: bold;
+              padding: 2px;}
+      input {border-radius: 5%;
+             color: grey;
+             font-weight: bold;
+             padding:3px;}
+  }
 
 
   .fondos-JL {
@@ -47,30 +61,33 @@
     /*Medias de doctores para pantallas más chicas*/
   @media (max-width: 992px) {
    .mediaFotoDr {text-align: center}
+   .mediaFotoDra {text-align: center;
+    margin-top:40px;}
   }
+
   @media (max-width:768px) {
     .mediaFotoDr {
       margin-top: 15px;}
-      .JorgeLopez {margin-bottom: 0px;}
-      .introDR {margin-top: 0px;}
-  }
-  
-  @media (max-width: 992px) {
-    .mediaFotoDra {text-align: center;
-    margin-top:40px;}
-  }
-  
-  @media (max-width:768px) {  
-  .introDR {  
-    margin-top:0px;
-    margin-bottom:30¡5px;
-     font-size: 0.7rem;   
-   }
+    .JorgeLopez {margin-bottom: 0px;}
+
+    .introDR {  
+        margin-top:0px;
+        margin-bottom:30¡5px;
+         font-size: 0.9rem;   
+       }
     .fotoDraXimena {display: none;}
-  
-  .turnosH2 {
-    padding-top: 25px;
-  font-size: 0.9rem; }
+      
+    .turnosH2 {
+        padding-top: 25px;
+      font-size: 0.9rem; }
+
+    
+  fieldset {   
+       legend {font-size: 1rem; }
+       p { font-size: 0.7rem;}
+       label {font-size: 1rem; }
+         }  
   }
   
+
   

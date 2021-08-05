@@ -465,6 +465,8 @@ main section a {
   align-items: center;
   margin-bottom: 2px; }
   .section1 .div1 {
+    color: grey;
+    font-weight: bold;
     margin: 40px;
     display: flex;
     justify-content: space-around;
@@ -479,6 +481,13 @@ main section a {
       text-align: center;
       padding: 40px 20px;
       background-color: whitesmoke; }
+      .section1 .div1 .articles1 select {
+        color: grey;
+        padding: 3px; }
+      .section1 .div1 .articles1 option {
+        color: #cf4fbe;
+        font-weight: bold;
+        padding: 3px; }
 
 .section2 {
   width: 100%;
@@ -490,6 +499,21 @@ main section a {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .section2 label {
+    color: grey;
+    font-size: 1.1rem;
+    border: solid 1px grey;
+    border-radius: 10%;
+    font-weight: bold;
+    padding: 2px; }
+  .section2 input {
+    margin-top: 3px;
+    border-radius: 5%;
+    color: grey;
+    font-weight: bold;
+    padding: 3px; }
+  .section2 textarea {
+    width: 500px; }
 
 /*media para Contacto*/
 @media (max-width: 576px) {
@@ -498,7 +522,9 @@ main section a {
     .section1 .div1 .articles1 {
       font-size: 12px;
       height: 100px;
-      width: 15%; } }
+      width: 15%; }
+  .section2 textarea {
+    width: 390px; } }
 
 @media (max-width: 375px) {
   .section1 .div1 {
@@ -539,12 +565,28 @@ main section a {
   text-align: center;
   text-decoration: underline; }
 
-fieldset legend {
+fieldset legend, fieldset p, fieldset label {
   color: grey;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: normal;
   text-align: center; }
+
+fieldset p {
+  font-size: 1rem; }
+
+fieldset label {
+  font-size: 1.1rem;
+  border: solid 1px grey;
+  border-radius: 10%;
+  font-weight: bold;
+  padding: 2px; }
+
+fieldset input {
+  border-radius: 5%;
+  color: grey;
+  font-weight: bold;
+  padding: 3px; }
 
 .fondos-JL {
   background-image: radial-gradient(lightpink, pink, white); }
@@ -552,7 +594,10 @@ fieldset legend {
 /*Medias de doctores para pantallas más chicas*/
 @media (max-width: 992px) {
   .mediaFotoDr {
-    text-align: center; } }
+    text-align: center; }
+  .mediaFotoDra {
+    text-align: center;
+    margin-top: 40px; } }
 
 @media (max-width: 768px) {
   .mediaFotoDr {
@@ -560,23 +605,20 @@ fieldset legend {
   .JorgeLopez {
     margin-bottom: 0px; }
   .introDR {
-    margin-top: 0px; } }
-
-@media (max-width: 992px) {
-  .mediaFotoDra {
-    text-align: center;
-    margin-top: 40px; } }
-
-@media (max-width: 768px) {
-  .introDR {
     margin-top: 0px;
     margin-bottom: 30¡5px;
-    font-size: 0.7rem; }
+    font-size: 0.9rem; }
   .fotoDraXimena {
     display: none; }
   .turnosH2 {
     padding-top: 25px;
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+  fieldset legend, fieldset p, fieldset label {
+    font-size: 1rem; }
+  fieldset p {
+    font-size: 0.7rem; }
+  fieldset label {
+    font-size: 1rem; } }
 
 /*footer*/
 footer {
