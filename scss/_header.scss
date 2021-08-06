@@ -18,14 +18,19 @@ header { display: flex;
                    width:80px;
                    height:80px; 
                    border-radius: 70%;}
-              .menu-abrir{font-size: 40px;
+              .menu-abrir{
+                font-size: 40px;
                    color: white;
                    display: none;}
-              .menu-cerrar {font-size: 25px;
-                     margin-left: 80px;
+              .menu-cerrar {
+                    font-size: 25px;
+                     margin-left: 120px;
+                     margin-bottom: 35px;
+                     margin-top: 0px;
+                     padding-top: 0px;
                      font-weight: bold;
-                      color: rgb(161, 145, 145);
-                      display: none;}
+                    color: rgb(161, 145, 145);
+                    display: none;}
                   
               }
   
@@ -78,19 +83,25 @@ nav {margin: 10px 15px 10px 10px;
    nav {position: absolute;
     top: -400px;
     margin: 0px;
+    padding-top:4px;
     &:target {top:0px;}
 
     ul {display: flex;
      flex-direction: column;
-     
-          li a {display: block; 
+          li {
+            height: 38px;
+            width: 100%;
+            a {display: block; 
+              align-items: center;
             text-align: center;
             border-radius: 10%;
-            height: 17px;
-            padding:1px;
-           }
-          }
+           height: 25px;
+            margin-top: 0px;
+            margin-bottom: 15px;;
+            padding:5px;}
+             }
          }
+     }
   }
 
   @media (max-width: 370px) {

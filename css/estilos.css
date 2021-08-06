@@ -29,7 +29,10 @@ header {
       display: none; }
     header section .menu-cerrar {
       font-size: 25px;
-      margin-left: 80px;
+      margin-left: 120px;
+      margin-bottom: 35px;
+      margin-top: 0px;
+      padding-top: 0px;
       font-weight: bold;
       color: #a19191;
       display: none; }
@@ -77,18 +80,25 @@ nav {
   nav {
     position: absolute;
     top: -400px;
-    margin: 0px; }
+    margin: 0px;
+    padding-top: 4px; }
     nav:target {
       top: 0px; }
     nav ul {
       display: flex;
       flex-direction: column; }
-      nav ul li a {
-        display: block;
-        text-align: center;
-        border-radius: 10%;
-        height: 17px;
-        padding: 1px; } }
+      nav ul li {
+        height: 38px;
+        width: 100%; }
+        nav ul li a {
+          display: block;
+          align-items: center;
+          text-align: center;
+          border-radius: 10%;
+          height: 25px;
+          margin-top: 0px;
+          margin-bottom: 15px;
+          padding: 5px; } }
 
 @media (max-width: 370px) {
   header section .menu-abrir {
@@ -105,14 +115,14 @@ main {
   margin-top: 0px; }
 
 .tituloIndex {
+  width: 100%;
   text-align: center;
   color: grey;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   padding: 20px;
-  width: 600px;
-  margin: 0px 60px 5px 380px;
   font-size: 30pt;
+  margin-bottom: 0px;
   text-decoration: underline; }
 
 .backIntro {
@@ -238,9 +248,6 @@ main section a {
       margin-left: 0px;
       color: grey;
       font-size: 90%; }
-  .tituloIndex {
-    margin: 0px 60px 5px 60px;
-    font-size: 150%; }
   .SeccionXi {
     display: flex;
     flex-direction: column;
@@ -317,11 +324,9 @@ main section a {
     padding-left: 180px; } }
 
 @media (max-width: 546px) {
-  .tituloIndex {
-    margin: 0px 10px 5px 10px;
-    font-size: 140%;
-    padding: 20px 10px;
-    width: 500px; }
+  main .tituloIndex {
+    padding: 10px;
+    font-size: 23pt; }
   .backIntro .parrIntro {
     padding-right: 100px;
     padding-left: 150px;
@@ -343,11 +348,6 @@ main section a {
     padding-top: 190px; } }
 
 @media (max-width: 415px) {
-  .tituloIndex {
-    margin-left: 30px;
-    padding-left: 20px;
-    width: 300px;
-    font-size: 120%; }
   .backIntro .parrIntro {
     padding-right: 120px;
     padding-left: 100px;
@@ -355,6 +355,10 @@ main section a {
     width: 420px; } }
 
 @media (max-width: 360px) {
+  main .tituloIndex {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    font-size: 19pt; }
   .backIntro .parrIntro {
     padding-right: 150px;
     padding-left: 70px;

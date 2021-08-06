@@ -1,7 +1,5 @@
 
-
 /*generales e index*/
-
 
 main {  
     background-color:#fae6e0;
@@ -9,15 +7,15 @@ main {
      margin-top: 0px;}
   
   .tituloIndex {
+    width: 100%;
     text-align: center; 
     color:grey; 
     font-family: Georgia, 'Times New Roman', Times, serif ;
     font-weight: bold;
     padding: 20px;
-    width: 600px;
-    margin: 0px 60px 5px 380px;
     font-size: 30pt;
-   text-decoration: underline; }
+    margin-bottom: 0px;
+    text-decoration: underline; }
   
   .backIntro {
     margin-left: 30px;
@@ -151,11 +149,7 @@ main {
            }
           }
 
-      .tituloIndex {   
-        margin: 0px 60px 5px 60px;
-        font-size: 150%;
-      }
-
+     
       .SeccionXi { 
      display: flex;
      flex-direction: column;
@@ -271,12 +265,12 @@ main {
  
 
   @media (max-width: 546px) {
-    .tituloIndex {   
-    margin: 0px 10px 5px 10px;
-    font-size: 140%;
-    padding:20px 10px;
-    width: 500px;
-    }
+
+  main  { .tituloIndex {
+      padding: 10px;
+      font-size: 23pt;
+      } }
+
    .backIntro { .parrIntro { 
                              padding-right: 100px;
                              padding-left: 150px;
@@ -306,11 +300,7 @@ main {
   }
 
   @media (max-width: 415px) {
-  .tituloIndex {
-    margin-left:30px;
-   padding-left: 20px;
-   width: 300px;
-   font-size: 120%;}
+
    .backIntro { .parrIntro { 
     padding-right: 120px;
     padding-left: 100px;
@@ -321,6 +311,12 @@ main {
   }
 
   @media (max-width: 360px) {
+    main  { .tituloIndex {
+      padding-top: 15px;
+      padding-bottom: 0px;
+      font-size: 19pt;
+      } }
+
     
      .backIntro { .parrIntro { 
       padding-right: 150px;
