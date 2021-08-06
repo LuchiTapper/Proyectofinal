@@ -3,24 +3,27 @@
    .JorgeLopez { 
     padding-top: 20px;
     padding-bottom: 20px;
-  width: 100%; 
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 2em;
-  font-weight: normal;
-  text-decoration: underline;
-  text-align: center;
-  margin-left: 20px;
+    width: 100%; 
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 2rem;
+     font-weight: normal;
+     text-decoration: underline;
+     text-align: center;
+      margin-left: 20px;
+     
   }
-  
-  .introDR {
+  .introArticle {
     border-style: inset;
-   text-align: center;
-    color: grey;
-    font-size: 1.1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 40px 50px;
-     height: 180px;
-  }
+ 
+       .introDR {      
+           text-align: center;
+            color: grey;
+            font-size: 1.1rem;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             padding: 20px;
+               }
+       }
+
   .turnosH2 {
     color: grey;
     padding-top: 10px;
@@ -70,11 +73,10 @@
       margin-top: 15px;}
     .JorgeLopez {margin-bottom: 0px;}
 
-    .introDR {  
-        margin-top:0px;
-        margin-bottom:30¡5px;
+    .introArticle {.introDR {        
          font-size: 0.9rem;   
-       }
+       }}
+
     .fotoDraXimena {display: none;}
       
     .turnosH2 {
@@ -89,5 +91,7 @@
          }  
   }
   
-
+  @media (max-width:450px) {   
+    .JorgeLopez {font-size: 1.5rem;}
+  }
   

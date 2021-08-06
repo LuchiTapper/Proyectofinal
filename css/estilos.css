@@ -142,7 +142,7 @@ main {
     text-align: center;
     color: black;
     font-family: 'Tauri', sans-serif;
-    font-size: 120%;
+    font-size: 1.2rem;
     font-weight: bold;
     animation-name: intro;
     animation-iteration-count: 1;
@@ -247,7 +247,7 @@ main section a {
       padding-right: 70px;
       margin-left: 0px;
       color: grey;
-      font-size: 90%; }
+      font-size: 0.9rem; }
   .SeccionXi {
     display: flex;
     flex-direction: column;
@@ -268,7 +268,7 @@ main section a {
       margin-left: 40px;
       padding-left: 190px;
       padding-top: 170px;
-      font-size: 75%; }
+      font-size: 0.7rem; }
   .fotoXi {
     margin-top: 45px; } }
 
@@ -295,7 +295,7 @@ main section a {
     margin-left: 80px;
     padding-left: 200px;
     padding-top: 170px;
-    font-size: 72%; }
+    font-size: 0.6rem; }
   #CelularCarru {
     height: 60px;
     font-size: smaller;
@@ -574,20 +574,20 @@ main section a {
   padding-bottom: 20px;
   width: 100%;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: normal;
   text-decoration: underline;
   text-align: center;
   margin-left: 20px; }
 
-.introDR {
-  border-style: inset;
-  text-align: center;
-  color: grey;
-  font-size: 1.1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 40px 50px;
-  height: 180px; }
+.introArticle {
+  border-style: inset; }
+  .introArticle .introDR {
+    text-align: center;
+    color: grey;
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px; }
 
 .turnosH2 {
   color: grey;
@@ -639,9 +639,7 @@ fieldset input {
     margin-top: 15px; }
   .JorgeLopez {
     margin-bottom: 0px; }
-  .introDR {
-    margin-top: 0px;
-    margin-bottom: 30¡5px;
+  .introArticle .introDR {
     font-size: 0.9rem; }
   .fotoDraXimena {
     display: none; }
@@ -654,6 +652,10 @@ fieldset input {
     font-size: 0.7rem; }
   fieldset label {
     font-size: 1rem; } }
+
+@media (max-width: 450px) {
+  .JorgeLopez {
+    font-size: 1.5rem; } }
 
 /*footer*/
 footer {
