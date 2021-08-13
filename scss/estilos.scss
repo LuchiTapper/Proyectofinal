@@ -2,6 +2,9 @@
     padding: 0;
   }
 
+$texto: Georgia, 'Times New Roman', Times, serif;
+$textoColor: grey;
+
 @import "header";
 @import "index";
 @import "servicios";

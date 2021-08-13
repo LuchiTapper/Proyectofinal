@@ -5,8 +5,8 @@
     background-image: url(../img/atencionvirtual.jpg);
     background-repeat: space;
     background-position: center;
-    color: grey;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color:$textoColor;
+    font-family: $texto;
     display: grid;
     grid-template-areas:
        "titulo titulo titulo"
@@ -74,7 +74,7 @@
 
 
     .titulo-SM {
-    font-family:Georgia, 'Times New Roman', Times, serif;    
+    font-family: $texto;    
     grid-area: titulo; 
     display: flex;
     justify-content: center;

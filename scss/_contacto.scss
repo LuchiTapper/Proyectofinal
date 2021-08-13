@@ -6,15 +6,17 @@
     text-decoration: underline;
      padding: 30px; 
      height: 30px;
+     font-family: $texto;
   }
   
   .h2Contacto {
-  color: grey;
+  color: $textoColor;
   text-align: center; 
   text-decoration: underline;
   padding: 0px 20px 20px 20px; 
   height: 20px;
-  margin-bottom: 10px;}
+  margin-bottom: 10px;
+   font-family: $texto;}
   
   .section1 { 
     width: 100%; 
@@ -27,7 +29,7 @@
     align-items: center;
     margin-bottom: 2px;
     .div1 {
-      color: grey;
+      color: $textoColor;
       font-weight: bold;
       margin: 40px;
       display: flex;
@@ -44,7 +46,7 @@
             text-align: center;
             padding: 40px 20px; 
             background-color: whitesmoke;
-            select {color: grey;
+            select {color:$textoColor;
                     padding: 3px;}
             option {color: rgb(207, 79, 190);
                     font-weight: bold;
@@ -64,7 +66,7 @@
     justify-content: center;
     align-items: center;
      label {
-      color: grey; 
+      color:$textoColor; 
       font-size: 1.1rem;
       border: solid 1px grey;
       border-radius: 10%; 
@@ -73,7 +75,7 @@
      input {
          margin-top: 3px;
          border-radius: 5%;
-         color: grey;
+         color:$textoColor;
          font-weight: bold;
          padding:3px; }
      textarea { width: 500px;}

@@ -9,8 +9,8 @@ main {
   .tituloIndex {
     width: 100%;
     text-align: center; 
-    color:grey; 
-    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color: $textoColor; 
+    font-family: $texto;
     font-weight: bold;
     padding: 20px;
     font-size: 30pt;
@@ -96,7 +96,7 @@ main {
     padding-top: 3px;
     margin-bottom: 10px;
     text-align: center;
-    color: grey;
+    color: $textoColor;
     font-size: 1.7rem;
    text-decoration: underline;}
   
@@ -104,7 +104,7 @@ main {
     padding-top: 3px;
     margin-bottom: 3px;
     text-align: center;
-    color: grey;
+    color: $textoColor;
     font-size: 0.9rem;
    }
   
@@ -144,7 +144,7 @@ main {
       padding-left: 300px;
       padding-right: 70px;
       margin-left: 0px;
-      color: grey;
+      color: $textoColor;
       font-size: 0.9rem;
            }
           }
@@ -205,7 +205,8 @@ main {
   @media (max-width:798px) {
     .backIntro {
       .parrIntro {
-      padding-left: 110px;}
+      padding-left: 130px;
+      padding-right: 220px;}
          }
     }
 
@@ -252,14 +253,14 @@ main {
     .backIntro {
       .parrIntro {
       margin-left: 30px;
-      padding-left: 200px;} 
+      padding-left: 210px;} 
     }
   }
   @media (max-width:620px) {
     .backIntro {
       .parrIntro {
-      margin-left: 10px;
-      padding-left: 180px;} 
+        padding-left: 180px;
+        padding-right: 245px;} 
     }
   }
  
@@ -272,7 +273,7 @@ main {
       } }
 
    .backIntro { .parrIntro { 
-                             padding-right: 100px;
+                             padding-right: 150px;
                              padding-left: 150px;
                              width: 470px ;}
                 }
@@ -293,7 +294,7 @@ main {
   @media (max-width:460px) {
     .backIntro {
       .parrIntro {
-      width: 400px;
+      width: 430px;
       padding-left: 120px;
       padding-top: 190px;} 
     }
@@ -302,8 +303,8 @@ main {
   @media (max-width: 415px) {
 
    .backIntro { .parrIntro { 
-    padding-right: 120px;
-    padding-left: 100px;
+    padding-right: 150px;
+    padding-left: 90px;
     padding-top: 190px;
     width: 420px ;}
    }
@@ -319,7 +320,7 @@ main {
 
     
      .backIntro { .parrIntro { 
-      padding-right: 150px;
+      padding-right: 170px;
       padding-left: 70px;     
       width: 420px ;}
      }
@@ -327,6 +328,7 @@ main {
 
     @media (max-width: 324px) {
       .backIntro { .parrIntro { 
-       padding-left: 50px; }
+       padding-left: 30px; 
+      padding-right: 190px;}
       }
      }

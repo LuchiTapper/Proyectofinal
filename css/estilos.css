@@ -118,7 +118,7 @@ main {
   width: 100%;
   text-align: center;
   color: grey;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   padding: 20px;
   font-size: 30pt;
@@ -286,7 +286,8 @@ main section a {
 
 @media (max-width: 798px) {
   .backIntro .parrIntro {
-    padding-left: 110px; } }
+    padding-left: 130px;
+    padding-right: 220px; } }
 
 @media (max-width: 766px) {
   .backIntro .parrIntro {
@@ -316,19 +317,19 @@ main section a {
 @media (max-width: 667px) {
   .backIntro .parrIntro {
     margin-left: 30px;
-    padding-left: 200px; } }
+    padding-left: 210px; } }
 
 @media (max-width: 620px) {
   .backIntro .parrIntro {
-    margin-left: 10px;
-    padding-left: 180px; } }
+    padding-left: 180px;
+    padding-right: 245px; } }
 
 @media (max-width: 546px) {
   main .tituloIndex {
     padding: 10px;
     font-size: 23pt; }
   .backIntro .parrIntro {
-    padding-right: 100px;
+    padding-right: 150px;
     padding-left: 150px;
     width: 470px; }
   .jsCarru {
@@ -343,14 +344,14 @@ main section a {
 
 @media (max-width: 460px) {
   .backIntro .parrIntro {
-    width: 400px;
+    width: 430px;
     padding-left: 120px;
     padding-top: 190px; } }
 
 @media (max-width: 415px) {
   .backIntro .parrIntro {
-    padding-right: 120px;
-    padding-left: 100px;
+    padding-right: 150px;
+    padding-left: 90px;
     padding-top: 190px;
     width: 420px; } }
 
@@ -360,13 +361,14 @@ main section a {
     padding-bottom: 0px;
     font-size: 19pt; }
   .backIntro .parrIntro {
-    padding-right: 150px;
+    padding-right: 170px;
     padding-left: 70px;
     width: 420px; } }
 
 @media (max-width: 324px) {
   .backIntro .parrIntro {
-    padding-left: 50px; } }
+    padding-left: 30px;
+    padding-right: 190px; } }
 
 /*HTML ServiciosMédicos*/
 .estiloSM {
@@ -376,7 +378,7 @@ main section a {
   background-repeat: space;
   background-position: center;
   color: grey;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   display: grid;
   grid-template-areas: "titulo titulo titulo" "endocrino clinica nutri" "endocrino clinica nutri" "endocrino  clinica nutri"; }
   .estiloSM .endo, .estiloSM .clinica, .estiloSM .nutrición {
@@ -435,7 +437,7 @@ main section a {
     transform: translateY(10px); } }
 
 .titulo-SM {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   grid-area: titulo;
   display: flex;
   justify-content: center;
@@ -479,7 +481,8 @@ main section a {
   text-align: center;
   text-decoration: underline;
   padding: 30px;
-  height: 30px; }
+  height: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif; }
 
 .h2Contacto {
   color: grey;
@@ -487,7 +490,8 @@ main section a {
   text-decoration: underline;
   padding: 0px 20px 20px 20px;
   height: 20px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif; }
 
 .section1 {
   width: 100%;
@@ -573,7 +577,7 @@ main section a {
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
   font-weight: normal;
   text-decoration: underline;
@@ -594,7 +598,7 @@ main section a {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.3em;
   font-weight: normal;
   text-align: center;
@@ -602,7 +606,7 @@ main section a {
 
 fieldset legend, fieldset p, fieldset label {
   color: grey;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.3rem;
   font-weight: normal;
   text-align: center; }
